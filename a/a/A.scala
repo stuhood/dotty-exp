@@ -7,4 +7,6 @@ object A {
     CacheBuilder.newBuilder()
       .maximumSize(16)
       .build()
+
+  def x: (Float | Long) = if (c.getIfPresent(1) ne null) 1.01f else 2L
 }

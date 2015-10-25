@@ -1,0 +1,6 @@
+#!/bin/bash
+b/BUILD
+
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_65`
+java -classpath guava-16.0.1.jar:jsr305-2.0.1.jar:scala-library-2.11.7.jar:a:b \
+  b.B $*
